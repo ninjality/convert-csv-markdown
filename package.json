@@ -1,0 +1,26 @@
+{
+  "name": "convert-csv-markdown",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "watch": "noderize-scripts watch",
+    "build": "noderize-scripts build",
+    "start": "noderize-scripts start --runOnWatch=false",
+    "format": "noderize-scripts format",
+    "test": "noderize-scripts test",
+    "clean": "noderize-scripts clean",
+    "convert": "npm run build && npm start"
+  },
+  "devDependencies": {
+    "@noderize/scripts": "^0.4.6"
+  },
+  "dependencies": {
+    "@noderize/runtime": "^0.4.6",
+    "csv-parse": "^2.2.0",
+    "date-fns": "^1.29.0",
+    "dedent": "^0.7.0",
+    "fs-extra": "^5.0.0",
+    "lodash": "^4.17.5"
+  }
+}
